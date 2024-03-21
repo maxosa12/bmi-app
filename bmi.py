@@ -20,8 +20,8 @@ def bmi_calc(w,h):
 st.title('BMI CALCULATOR')
 st.subheader('Health is wealth ,calculate your BMI today')
 
-weight = st.number_input('Enter your weight in kg',step=1)
-height= st.number_input('Enter your height in meytres',step=1)
+weight = st.number_input('Enter your weight in kg',step=0.1)
+height= st.number_input('Enter your height in meytres')
 
 if  st.button('Calculate'):
     st.success(bmi_calc(weight,height))
